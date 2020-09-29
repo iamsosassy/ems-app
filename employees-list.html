@@ -56,8 +56,8 @@
             <div class="col-lg-3 col-md-3">
                 <div class="list-group">
                     <div class="list-group-item active">Employee Data</div>
-                    <a href="#" class="list-group-item">Add Employee</a>
-                    <a href="#" class="list-group-item">View All Employees</a>
+                    <a href="#" class="list-group-item data-toggle=" modal" data-target="#add_employee">Add Employee</a>
+                    <a href=" employees-list.html" class="list-group-item">View All Employees</a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9">
@@ -75,7 +75,8 @@
                         <td>1</td>
                         <td>Claudia Pacheco</td>
                         <td>Claudia@gmail.com</td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
+                        <td><a href="#" data-toggle=" modal" data-target="#employee_details1"
+                                class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
@@ -83,7 +84,8 @@
                         <td>2</td>
                         <td>Edward Ramirez</td>
                         <td>edward@gmail.com</td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
+                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                                class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
@@ -91,7 +93,8 @@
                         <td>3</td>
                         <td>Nilda Rivera</td>
                         <td>nilda@gmail.com</td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
+                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                                class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
@@ -99,7 +102,8 @@
                         <td>4</td>
                         <td>Sydney Ramirez</td>
                         <td>sydney@gmail.com</td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
+                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                                class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
@@ -107,30 +111,112 @@
                         <td>5</td>
                         <td>Lucas Ramirez</td>
                         <td>lucas@gmail.com</td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
+                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                                class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
                 </table>
             </div>
+        </div>
+    </div>
+    <!-- dashboard contents -->
 
+    <!--Add Modal-->
+    <div class="modal fade" id="add_employee" tabindex="-1" aria-labelledby="add_employee" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="date" class="form-control form-control-sm" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="Employee Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-sm" placeholder="Employee Email ID">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control form-control-sm">
+                                <option value="Graphic Designer">Graphic Designer</option>
+                                <option value="Web Designer">Web Designer</option>
+                                <option value="Web Developer">Web Developer/option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-sm btn-success btn-block">Add New Employee</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!--Add Modal-->
+
+    <!--Details Modal-->
+
+    <div class="modal fade" id="employee_details1" tabindex="-1" aria-labelledby="employee_details1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
 
 
+                <table class="table table-bordered">
+                    <tr>
+                        <th>ID</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>Joining Date</th>
+                        <th>29 September 2020</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Claudia Pacheco</th>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th>claudia@gmail.com</th>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <th>201-555-7889</th>
+                    </tr>
+                    <tr>
+                        <th>Job</th>
+                        <th>Graphic Designer</th>
+                    </tr>
+                </table>
+
+            </div>
 
 
-    <!-- dashboard contents -->
-
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
+            <!--Details Modal-->
+            <!-- Optional JavaScript -->
+            <!-- Popper.js first, then Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous"></script>
 
 </body>
 
