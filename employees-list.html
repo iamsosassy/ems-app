@@ -33,7 +33,7 @@
                         <a class="nav-link" aria-current="page" href="employees-list.html">Employees</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Jobs</a>
+                        <a class="nav-link" href="employees-list.html">Jobs</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -56,7 +56,8 @@
             <div class="col-lg-3 col-md-3">
                 <div class="list-group">
                     <div class="list-group-item active">Employee Data</div>
-                    <a href="#" class="list-group-item data-toggle=" modal" data-target="#add_employee">Add Employee</a>
+                    <a href="employees-list.html" class="list-group-item data-toggle=" modal"
+                        data-target="#add_employee">Add Employee</a>
                     <a href=" employees-list.html" class="list-group-item">View All Employees</a>
                 </div>
             </div>
@@ -69,22 +70,22 @@
                         <th>Details</th>
                         <th>Edit</th>
                         <th>Delete</th>
-
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Claudia Pacheco</td>
                         <td>Claudia@gmail.com</td>
-                        <td><a href="#" data-toggle=" modal" data-target="#employee_details1"
+                        <td><a href="employees-list.html" data-toggle="modal" data-target="#employee_details1"
                                 class="btn btn-sm btn-block btn-info">Details</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
+                        <td><a href="#" ata-toggle=" modal" data-target="#employee_edit_details"
+                                class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Edward Ramirez</td>
                         <td>edward@gmail.com</td>
-                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                        <td><a href="employees-list.html" data-toggle="modal" data-target="#add_employee"
                                 class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
@@ -93,7 +94,7 @@
                         <td>3</td>
                         <td>Nilda Rivera</td>
                         <td>nilda@gmail.com</td>
-                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                        <td><a href="employees-list.html" data-toggle="modal" data-target="#add_employee"
                                 class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
@@ -102,7 +103,7 @@
                         <td>4</td>
                         <td>Sydney Ramirez</td>
                         <td>sydney@gmail.com</td>
-                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                        <td><a href="employees-list.html" data-toggle="modal" data-target="#add_employee"
                                 class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
@@ -111,7 +112,7 @@
                         <td>5</td>
                         <td>Lucas Ramirez</td>
                         <td>lucas@gmail.com</td>
-                        <td><a href="#" data-toggle=" modal" data-target="#add_employee"
+                        <td><a href="employees-list.html" data-toggle="modal" data-target="#add_employee"
                                 class="btn btn-sm btn-block btn-info">Details</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-warning">Edit</a></td>
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
@@ -123,6 +124,7 @@
     <!-- dashboard contents -->
 
     <!--Add Modal-->
+
     <div class="modal fade" id="add_employee" tabindex="-1" aria-labelledby="add_employee" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -132,35 +134,33 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <input type="date" class="form-control form-control-sm" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="Employee Name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control form-control-sm" placeholder="Employee Email ID">
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone Number">
-                        </div>
-                        <div class="mb-3">
-                            <select class="form-control form-control-sm">
-                                <option value="Graphic Designer">Graphic Designer</option>
-                                <option value="Web Designer">Web Designer</option>
-                                <option value="Web Developer">Web Developer/option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-sm btn-success btn-block">Add New Employee</button>
-                        </div>
-                    </form>
-                </div>
+                <form>
+                    <div class="mb-3">
+                        <input type="date" class="form-control form-control-sm" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Employee Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control form-control-sm" placeholder="Employee Email ID">
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control form-control-sm">
+                            <option value="Graphic Designer">Graphic Designer</option>
+                            <option value="Web Designer">Web Designer</option>
+                            <option value="Web Developer">Web Developer/option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-sm btn-success btn-block">Add New Employee</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!--Add Modal-->
@@ -176,8 +176,6 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-
-
                 <table class="table table-bordered">
                     <tr>
                         <th>ID</th>
@@ -204,7 +202,6 @@
                         <th>Graphic Designer</th>
                     </tr>
                 </table>
-
             </div>
 
 
